@@ -1,9 +1,11 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 
-let names = []
+let names = ["titi", "pepe", "ñeresad"]
 const listaAmigos = document.getElementById("listaAmigos")
 const textField = document.getElementById("amigo")
 const resultado = document.getElementById("resultado")
+
+actualizarLista()
 
 function isEmptyName(name) {    
     if (name == 0) {
@@ -30,6 +32,8 @@ function agregarAmigo() {
 
     if (!isEmptyName(name)) {
         names.push(name)
+
+        resultado.innerHTML = ""
 
         actualizarLista()
     }
